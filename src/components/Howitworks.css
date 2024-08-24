@@ -1,0 +1,73 @@
+/* HowItWorks.css */
+.how-it-works {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.how-it-works-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+}
+
+.phone-image {
+  width: 100%;
+  height: auto;
+  max-width: 550px; /* Slightly reduced to bring content closer */
+}
+
+.how-it-works-content {
+  flex: 1;
+  padding-left: 1rem; /* Reduced padding */
+  text-align: left;
+}
+
+.how-it-works h2 {
+  font-size: 2rem; /* Reduced to make content more compact */
+  margin-bottom: 1rem;
+  color: 
+  #104799;
+}
+
+.how-it-works p {
+  font-size: 1.15rem; /* Slightly reduced */
+  margin-bottom: 1.5rem;
+  color: 
+  #263238;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+ /* Reduced gap between steps */
+}
+
+.step {
+  
+  /* Reduced padding */
+  border-radius: 8px;
+}
+
+.step h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem; /* Slightly reduced */
+  color: 
+  #222222;
+}
+
+.step p {
+  font-size: 0.95rem; /* Slightly reduced */
+  color: #555;
+}
+

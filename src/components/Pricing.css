@@ -1,0 +1,45 @@
+/* Pricing.css */
+.pricing {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .pricing p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .pricing ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  
+  .pricing ul li {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .pricing button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pricing button:hover {
+    background-color: #0056b3;
+  }
+  
