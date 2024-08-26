@@ -10,6 +10,7 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import 'typeface-nunito';
 import Poster from './components/Poster';
+import FindUs from './components/findus';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Benefits />
       <Testimonials />
       <Pricing />
+      <FindUs />
       <ContactForm />
       <Footer />
     </div>

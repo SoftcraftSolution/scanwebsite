@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import './Herosection.css';
-import heroImage from './hero.png'; 
-import qr from './qr.png'; 
-import find from './findus.png';// Replace with the actual path to the image
+import heroImage from './hero.png';
+import qr from './qr.png';
+import find from './findus.png';
 
 const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -16,7 +17,7 @@ const HeroSection = () => {
       const isEnd = displayedText === currentWord && !isDeleting;
 
       if (isEnd) {
-        setTimeout(() => setIsDeleting(true), 1000); 
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting) {
         if (displayedText === '') {
           setIsDeleting(false);
@@ -42,14 +43,20 @@ const HeroSection = () => {
           <span className="scan-to">Scan to&nbsp;</span>
           <span className="review-reward">{displayedText}</span>
         </h1>
-        <p>ScanStar is a platform created for shops and restaurants to enhance 
-        customer engagement. Customers scan a QR code, provide feedback, and
-        earn rewards that can be redeemed at the same store. Shopkeepers gain access
-        to detailed insights, simplified management, and an effective way to boost 
-        customer satisfaction.</p>
+        <p>
+          ScanStar is a platform created for shops and restaurants to enhance
+          customer engagement. Customers scan a QR code, provide feedback, and
+          earn rewards that can be redeemed at the same store. Shopkeepers gain
+          access to detailed insights, simplified management, and an effective
+          way to boost customer satisfaction.
+        </p>
         <div className="hero-buttons">
-          <img className='bb'src={find} alt='find'></img>
-          <img className="bb" src={qr} alt='qr'></img>
+          <Link to="find-us" smooth={true} duration={500}>
+            <img className="bb" src={find} alt="Find Us" />
+          </Link>
+          <Link to="pricing" smooth={true} duration={500}>
+            <img className="bb" src={qr} alt="Buy QR" />
+          </Link>
         </div>
       </div>
       <img src={heroImage} alt="Hero" className="hero-image" />

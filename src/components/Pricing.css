@@ -1,45 +1,95 @@
-/* Pricing.css */
 .pricing {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-  }
-  
-  .pricing h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .pricing p {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  .pricing ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 2rem 0;
-    text-align: left;
-  }
-  
-  .pricing ul li {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    color: #555;
-  }
-  
-  .pricing button {
-    padding: 0.75rem 1.5rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .pricing button:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1b3a85;
+}
+
+.pricing p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 2px solid gray; /* Updated border color */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
+
+.pricing-card h3 {
+  font-size: 2.5rem;
+  color: #263238; /* Updated color */
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card h3 span {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+}
+
+.pricing-card p {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.pricing-card ul li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 30px; /* Adjust padding for the icon */
+}
+
+.pricing-card ul li::before {
+  content: "✔"; /* Checkmark symbol */
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black; /* Black circle */
+  color: white; /* White checkmark */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.pricing-card button {
+  padding: 0.75rem 5rem; /* Button padding */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Updated border radius */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: auto; /* Auto width */
+  margin: 0 auto; /* Centered button */
+  text-align: center;
+}
+
+.pricing-card button:hover {
+  background-color: #555;
+}

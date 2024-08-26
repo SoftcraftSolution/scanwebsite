@@ -1,39 +1,64 @@
 /* ContactForm.css */
+body{
+  font-family: 'Poppins', sans-serif;
+}
 .contact-form {
-    padding: 4rem 2rem;
-    background-color: #fff;
-  }
-  
-  .contact-form h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    padding: 0.75rem 1.5rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #104799;
+  text-align: center;
+}
+
+.contact-form p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form .input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.contact-form textarea {
+  height: 150px; /* Increase the height for the message field */
+}
+
+.contact-form button {
+  width: 200px;
+  height: 40px;
+  background-color: #104799;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.contact-form button:hover {
+  background-color: #083366;
+}
