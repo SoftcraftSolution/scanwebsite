@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo"></div>
+      <div className="logo" onClick={() => scroll.scrollToTop()}></div>
       <ul className="nav-links">
         <li>
           <Link to="how-it-works" smooth={true} duration={500}>
