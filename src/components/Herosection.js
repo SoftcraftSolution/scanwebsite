@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Herosection.css';
-import heroImage from './hero.png';
+import heroImage from './reduced.png';
 import qr from './qr.png';
 import find from './findus.png';
 
