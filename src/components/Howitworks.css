@@ -1,73 +1,117 @@
-/* HowItWorks.css */
-.how-it-works {
-  padding: 4rem 2rem;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .how-it-works-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to the start */
   max-width: 1200px;
   width: 100%;
+  padding: 2rem; /* Add padding for spacing */
 }
 
 .how-it-works-image {
-  flex: 1;
+  flex: 0 0 45%; /* Set a fixed width for the image container */
   display: flex;
-  justify-content: center;
-
+  justify-content: flex-start; /* Align image to the left */
+  margin-right: 2rem; /* Add some space between image and content */
 }
 
 .phone-image {
   width: 100%;
   height: auto;
-  max-width: 550px; /* Slightly reduced to bring content closer */
+  max-width: 100%;
 }
 
 .how-it-works-content {
-  flex: 1;
-  padding-left: 1rem; /* Reduced padding */
-  text-align: left;
+  flex: 1; /* Take the remaining space */
+  text-align: left; /* Align text to the left */
 }
 
 .how-it-works h2 {
-  font-size: 2rem; /* Reduced to make content more compact */
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: 
-  #104799;
+  color: #104799;
+  text-align: left; /* Align heading to the left */
 }
 
 .how-it-works p {
-  font-size: 1.15rem; /* Slightly reduced */
+  font-size: 1.15rem;
   margin-bottom: 1.5rem;
-  color: 
-  #263238;
+  color: #263238;
+  text-align: left; /* Align paragraph text to the left */
 }
 
 .steps {
   display: flex;
   flex-direction: column;
- /* Reduced gap between steps */
+  gap: 1rem; /* Add space between steps */
 }
 
 .step {
-  
-  /* Reduced padding */
+  display: flex; 
+  align-items: center; 
+  text-align: left; 
+  padding: 0.5rem 1rem; 
+  gap: 0.75rem; 
   border-radius: 8px;
 }
 
+.step-content {
+  display: flex;
+  flex-direction: column; 
+}
+
 .step h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem; /* Slightly reduced */
-  color: 
-  #222222;
+  font-size: 1.3rem; 
+  color: #222222;
+  margin: 0;
 }
 
 .step p {
-  font-size: 0.95rem; /* Slightly reduced */
+  font-size: 0.95rem;
   color: #555;
+  margin: 0.25rem 0;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .how-it-works-container {
+    flex-direction: column; 
+    padding: 1rem; 
+  }
+
+  .how-it-works-image {
+    margin-bottom: 1.5rem; 
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .how-it-works-content {
+    padding-left: 0; 
+    text-align: left; 
+  }
+
+  .how-it-works h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+  }
+
+  .how-it-works p {
+    font-size: 1rem;
+  }
+
+  .step {
+    flex-direction: row; 
+    align-items: center; 
+    text-align: left; 
+    padding: 0.5rem 1rem; 
+    gap: 1rem; 
+  }
+
+  .step h3 {
+    font-size: 1.2rem; 
+    text-align: left;
+    margin: 0;
+  }
+
+  .step p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+  }
+}

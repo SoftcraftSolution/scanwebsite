@@ -7,9 +7,14 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo" onClick={() => scroll.scrollToTop()}></div>
       <ul className="nav-links">
+      <li>
+          <Link to="how-it-works" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
         <li>
           <Link to="how-it-works" smooth={true} duration={500}>
-            How It Works
+            Working
           </Link>
         </li>
         <li>
@@ -20,21 +25,6 @@ const Navbar = () => {
         <li>
           <Link to="testimonials" smooth={true} duration={500}>
             Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link to="pricing" smooth={true} duration={500}>
-            Pricing
-          </Link>
-        </li>
-        <li>
-          <Link to="find-us" smooth={true} duration={500}>
-            Find Us
-          </Link>
-        </li>
-        <li>
-          <Link to="contact-form" smooth={true} duration={500}>
-            Contact Us
           </Link>
         </li>
       </ul>

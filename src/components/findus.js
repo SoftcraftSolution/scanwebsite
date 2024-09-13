@@ -5,8 +5,6 @@ import './findus.css';
 import axios from 'axios';
 import markerIcon from './scanmark.png';
 
-
-
 const containerStyle = {
   width: '100%',
   height: '400px'
@@ -21,9 +19,6 @@ const initialCenter = {
   lat: 19.7515,
   lng: 75.7139,
 };
-
-
-
 
 const FindUs = () => {
   const [shops, setShops] = useState([]);

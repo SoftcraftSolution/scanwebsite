@@ -1,7 +1,9 @@
 import React from 'react';
 import './Howitworks.css';
 import phoneImage from './howitwork.png';
-import Poster from './Poster.png' // Ensure the correct path to your image
+import scanIcon from './qrgold.png';
+import reviewIcon from './feedbackgold.png'; 
+import rewardIcon from './rewardgold.png'; 
 
 const HowItWorks = () => {
   return (
@@ -15,22 +17,29 @@ const HowItWorks = () => {
           <p>Discover the Simple and Effective Steps to Engage and Reward Your Customers Effortlessly.</p>
           <div className="steps">
             <div className="step">
-              <h3>Scan QR</h3>
-              <p>Customers simply scan the QR code from ScanToReview to begin their feedback process.</p>
+              <img src={scanIcon} alt="Scan QR" className="step-icon" />
+              <div className="step-content">
+                <h3>Scan QR</h3>
+                <p>Customers simply scan the QR code from ScanToReview to begin their feedback process.</p>
+              </div>
             </div>
             <div className="step">
-              <h3>Review</h3>
-              <p>After scanning, customers leave a review, sharing their experience and thoughts.</p>
+              <img src={reviewIcon} alt="Review" className="step-icon" />
+              <div className="step-content">
+                <h3>Review</h3>
+                <p>After scanning, customers leave a review, sharing their experience and thoughts.</p>
+              </div>
             </div>
             <div className="step">
-              <h3>Reward</h3>
-              <p>Positive reviews earn customers rewards that can be redeemed at the same location.</p>
+              <img src={rewardIcon} alt="Reward" className="step-icon" />
+              <div className="step-content">
+                <h3>Reward</h3>
+                <p>Positive reviews earn customers rewards that can be redeemed at the same location.</p>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-
     </section>
   );
 };

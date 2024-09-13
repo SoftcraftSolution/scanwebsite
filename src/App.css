@@ -8,6 +8,11 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 
 .App {
